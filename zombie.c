@@ -1,6 +1,6 @@
 /*
     Emirhan Akturk
-    19120205058
+
     Zombie Game
     Optimum doorman:2(average winning rate %75)
 */
@@ -84,7 +84,7 @@ void *slayer(void *p){
 }
 
 int win=0,lose=0;
-void zombiGame(int doorman){
+void zombieGame(int doorman){
     pthread_t DoorMans[doorman];//DoorMan
     pthread_t Slayer;//Slayers
     int s;
@@ -120,6 +120,6 @@ void zombiGame(int doorman){
 /*simulator main thread*/
 int main(int argc, char **argv){  
     int doorman=atoi(argv[1]);
-    zombiGame(doorman);
+    zombieGame(doorman);
     return 0;
 }
